@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Sir!</title>
+    
+    <style type="text/css">
+        
+    body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    text-align: center;
+    color: white;
+    padding: 40px;
+    overflow: hidden;
+}
+
+.card {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 15px;
+    width: 60%;
+    margin: auto;
+    box-shadow: 0px 0px 20px rgba(255, 215, 0, 0.5);
+    position: relative;
+    animation: fadeIn 2s ease-in-out;
+}
+
+h1 {
+    font-size: 40px;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 10px white; }
+    to { text-shadow: 0 0 20px yellow; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #ffd700;
+}
+
+/* Floating Balloons */
+.balloon {
+    position: absolute;
+    width: 50px;
+    height: 70px;
+    background: red;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: float 6s infinite ease-in-out;
+}
+
+.balloon:nth-child(2) { background: blue; left: 20%; animation-duration: 5s; }
+.balloon:nth-child(3) { background: green; left: 40%; animation-duration: 7s; }
+.balloon:nth-child(4) { background: yellow; left: 60%; animation-duration: 6s; }
+.balloon:nth-child(5) { background: purple; left: 80%; animation-duration: 5.5s; }
+
+@keyframes float {
+    0% { transform: translateY(100vh); opacity: 0.8; }
+    100% { transform: translateY(-10vh); opacity: 0; }
+}
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>🎉 Wishinggg you a happpyyyy Birthdayyyy,Sir...! ✨</h1>
+        <p>Your wisdom, guidance and inspiring personality leave a lasting impact on so many lives including mine Sir. 
+        I truly admire the way you lead with knowledge, kindness, and passion for teaching.😄💐</p>
+
+        <p>Thank you for being such a great advisor, motivator, supporter and teacher as friendly. 
+        May God bless you with the strength to achieve all your goals and the success you truly deserve sir.🙂😊</p>
+        <p><i> Your Students are so grateful to have you Sir and With heartfelt gratitude,<br> <b> Wishhing you a Happy birthday with continued growth, success and happiness sir...!🌟🙏🏻<br> Shine as bright as sunnn...</b></i></p>
+
+        <p class="footer"><i><b> Best wishes with Thankyouu,🤗💛<br> Your Student🥳 </i></b></p><p style="color: whitesmoke;"> yalaanti time lo ina Mahesh ni thana students doubts adagachu 😜<br>(Elanti time lone mahesh ni thana students vachi doubts adugutharu...😅)</p>
+    </div>
+
+    <!-- Floating Balloons -->
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+    <div class="balloon"></div>
+
+</body>
+</html>
